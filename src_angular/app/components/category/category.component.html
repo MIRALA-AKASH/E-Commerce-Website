@@ -1,0 +1,17 @@
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="#">
+            <img src="assets/images/logo.png" alt="XYZ Company" class="img-responsive">
+        </a>
+    </div>
+   <div class="menu-sidebar-content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar-list"   *ngFor = "let cat of category">
+                <li>
+                    <a>{{cat.Category_Name}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div> 
+</aside>
+

@@ -1,0 +1,65 @@
+<div class="main-content" stytle="background-color:skyblue">
+
+    <div class="section-content section-content-p30" style="background-color:cornflowerblue">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-info" (click)="addProducts()">
+                Add Products</button>
+                <button type="button" class="btn btn-danger btn-md navbar-right edit-btn " style="width: 100px; height: 48px; "(click)="show3()"><b><h3 style=color:white>Logout</h3></b></button>
+
+
+
+                    
+
+
+
+
+
+                
+            
+              <table class='table table-bordered'>
+                <thead>
+                    <tr class='table-dark'>
+                        <th>Product_Id</th>
+                        <th>Product_Name</th>
+                        <th>Product_Description</th>
+                    <th>product_Price</th>
+                        <th>Product_Stock</th>
+                        <th>Product_Category_Id</th>
+                        <th>Product_Image</th>
+                        <th>Action</th>
+
+                        
+                    </tr>
+            
+                </thead>
+              <tbody>
+                <tr  *ngFor="let pro of products">
+                    <td>{{pro.product_Id}}</td>
+                    <td>{{pro.product_Name}}</td>
+                    <td>{{pro.product_Description}}</td>
+                    <td>{{pro.product_Price}}</td>
+                    <td> {{pro.product_Stock}} </td>
+                    <td>{{pro.product_CategoryId}}</td>
+                   <td><img src="{{pro.product_Image}}" width="50%" height="100%"></td>
+                    
+                    
+                    <td>
+                 <button type="button" class="btn btn-success" (click)="updateProducts(pro.product_Id)">
+                            Update
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                        <button type="button" class="btn btn-info" (click) ="deleteProducts(pro.product_Id)">
+                            Delete                        
+                         </button>
+
+
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

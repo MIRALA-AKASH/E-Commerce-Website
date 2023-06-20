@@ -1,0 +1,16 @@
+<h3>Cart</h3>
+
+<div class="cart-item" *ngFor="let item of items">
+ Product_Id <span>{{item.product_Id}}</span>
+ Name <span>{{ item. product_Name}}</span>
+  Price<span>{{ item. product_Price| currency }}</span>
+  Image<span><img src={{item.product_Image}}></span>
+  <button type="button" class="btn btn-info" (click) ="deleteProduct(item.product_Id)">
+    Delete                        
+ </button> &nbsp;&nbsp;
+ <button type="button" class="btn btn-info" (click)="buy()" >
+  Buy
+  </button>
+
+
+</div>

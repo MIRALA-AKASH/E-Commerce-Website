@@ -1,0 +1,56 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+<div class="card">
+                <h3>Add products</h3>
+                <hr>
+                <form #loginform="ngForm" novalidate (ngSubmit)="onSubmit()">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>ProductId:</td><td><input type="Hidden" name="product_id" [(ngModel)]="pro.product_Id"/></td>
+                            </tr>
+        <tr><br></tr>
+                        <tr>
+                        <td><nav>ProductName:</nav></td><td><input type="text" name="product_Name" [(ngModel)]="pro.product_Name"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td><nav>ProductPrice:</nav></td><td><input type="text" name="product_Price" [(ngModel)]="pro.product_Price"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td><nav>ProductDes:</nav></td><td><input type="text" name="product_Description" [(ngModel)]="pro.product_Description"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td><nav>ProductStock:</nav></td><td><input type="ProductStock" name="product_Stock" [(ngModel)]="pro.product_Stock"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td>CategoryId</td>
+                        <td> <select name="deptId" [(ngModel)]="pro.product_CategoryId">
+                            <option value="1">boys</option>
+                            <option value="2">Girls</option>
+                            <option value="3">toys</option>
+                            <option value="4">Skin Cares</option>
+                        </select><td>
+</td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td><nav>Product_Image:</nav></td><td><input type="text"  name="u_type" [(ngModel)]="pro.product_Image" /></td>
+                    </tr>
+                    <tr><br></tr>
+
+                    <tr>
+                        <td><button class="btn btn-info" type="submit">sumbit</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </form>
+            
+</div>
+            </div></div></div>
+
+

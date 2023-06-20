@@ -1,0 +1,15 @@
+.center{
+    display: flex;
+    justify-content: center;
+}
+imag{
+    width: 1400px;
+    height: 400px;
+}
+body{
+  background-color:grey;  
+}
+button{
+width: 100px;
+height: 50px;
+}

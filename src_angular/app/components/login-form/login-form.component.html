@@ -1,0 +1,32 @@
+<div class="main-content">
+    <div class="section-content section-content-p30" style="background-color:beige">
+        <div class="container-fluid">
+            <div class="card">
+
+                <h3>Login</h3>
+                <hr>
+                <form #loginform="ngForm" novalidate (ngSubmit)="onSubmit()">
+                    <table>
+                        <tbody style="background-color:aliceblue">
+                      
+                    <tr>
+                        <td>Email:</td><td><input type="text" name="Email" [(ngModel)]="user.Email"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td>Password:</td><td><input type="password" name="Pass_word" [(ngModel)]="user.Pass_word"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td>UserType:</td><td><input type="text" name="User_type" [(ngModel)]="user.User_Type"/></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-info" type="submit">Login</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </form>
+            </div>
+            </div></div></div>
+
+
